@@ -81,9 +81,52 @@ body {
   padding: 5px 20px;
   font-size: 20px;
   border-radius: 5px;
-  transition: all ease .5s;
+  transition: all ease 0.5s;
   cursor: pointer;
 }
-.btn:hover{
+.btn:hover {
   background-color: darkslategray;
+}
+
+@media (max-width:500px) {
+  .container{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .cards {
+    width: 100%;
+    display: block;
+  }
+  .card {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .search-input {
+    font-size: 20px;
+  }
+}
+
+@media (min-width:500px) and (max-width: 678px) {
+  .cards {
+    display: block;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .search-input {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 678px) and (max-width: 1024px) {
+  .card {
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+  .search-input {
+    font-size: 20px;
+  }
 }
